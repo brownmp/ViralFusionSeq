@@ -32,9 +32,9 @@
 ##  $LastChangedDate: 16th Aug 2016 $
 ##  $LastChangedRevision: 1289 $
 
-unless (prompt_yn("Do you want to proceed with downloading and indexing VFS references?")){
-	exit();
-}
+# unless (prompt_yn("Do you want to proceed with downloading and indexing VFS references?")){
+# 	exit();
+# }
 
 my $foundexecuableBWA = 0;
 retry:
