@@ -39,7 +39,7 @@
 # my $foundexecuableBWA = 0;
 # retry:
 # my $bwa_path_to_bin = prompt("Please provide path to bin of BWA ");
-$bwa_path_to_bin=bwa
+$bwa_path_to_bin="bwa"
 print STDERR "VFS will try to index the downloaded reference files using $bwa_path_to_bin\n";
 if (-X "$bwa_path_to_bin"){
 	print STDERR "BWA can be executed by $bwa_path_to_bin\n";
