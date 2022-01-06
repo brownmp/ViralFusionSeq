@@ -39,18 +39,20 @@
 # my $foundexecuableBWA = 0;
 # retry:
 # my $bwa_path_to_bin = prompt("Please provide path to bin of BWA ");
-$bwa_path_to_bin="bwa"
-print STDERR "VFS will try to index the downloaded reference files using $bwa_path_to_bin\n";
-if (-X "$bwa_path_to_bin"){
-	print STDERR "BWA can be executed by $bwa_path_to_bin\n";
-	$foundexecuableBWA = 1;
-} else {
-	print STDERR "Failed to execute $bwa_path_to_bin\n";
-}
+# # $bwa_path_to_bin=bwa
+# print STDERR "VFS will try to index the downloaded reference files using $bwa_path_to_bin\n";
+# if (-X "$bwa_path_to_bin"){
+# 	print STDERR "BWA can be executed by $bwa_path_to_bin\n";
+# 	$foundexecuableBWA = 1;
+# } else {
+# 	print STDERR "Failed to execute $bwa_path_to_bin\n";
+# }
 
-if ($foundexecuableBWA !=1){
-	goto retry;
-}
+# if ($foundexecuableBWA !=1){
+# 	goto retry;
+# }
+
+$bwa_path_to_bin="bwa"
 
 #Check CPAN modules
 my $pass_CPAN_modules_ck = 1;
