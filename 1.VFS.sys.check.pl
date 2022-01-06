@@ -52,7 +52,7 @@
 # 	goto retry;
 # }
 
-$bwa_path_to_bin="bwa"
+$bwa_path_to_bin="bwa";
 
 #Check CPAN modules
 my $pass_CPAN_modules_ck = 1;
